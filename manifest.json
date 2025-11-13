@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "Jira Bulk Issue Creator",
+  "version": "1.0.1",
+  "description": "Upload a JSON file to bulk-create Jira issues linked to a specific epic. <a href=\"template.json\" download>Download file</a>",
+  "permissions": [
+    "scripting",
+    "storage",
+    "tabs",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "https://*.atlassian.net/*"
+  ],
+  "web_accessible_resources": [{
+    "resources": ["template.json"],
+    "matches": ["<all_urls>"]
+  }],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "favicon.png",
+    "default_title": "Jira Bulk Create"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "favicon.png",
+    "48": "favicon.png",
+    "128": "favicon.png"
+  }
+}

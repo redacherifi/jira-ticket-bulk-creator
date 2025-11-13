@@ -1,0 +1,94 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  width: 380px;
+  padding: 16px;
+  background-color: #f9fafc;
+}
+.container {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 16px;
+}
+h3 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  color: #172B4D;
+  margin-top: 0;
+}
+h3 img {
+  width: 24px;
+  height: 24px;
+}
+label {
+  font-weight: 600;
+  display: block;
+  margin-top: 10px;
+  color: #172B4D;
+  font-size: 13px;
+}
+input, button {
+  width: 100%;
+  padding: 8px 10px;
+  margin-top: 4px;
+  border-radius: 6px;
+  border: 1px solid #dfe1e6;
+  font-size: 13px;
+  box-sizing: border-box;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+input:focus {
+  border-color: #4C9AFF;
+  box-shadow: 0 0 0 2px rgba(76,154,255,0.2);
+  outline: none;
+}
+button {
+  margin-top: 12px;
+  background-color: #0052CC;
+  color: #fff;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #0065FF;
+}
+#viewFieldsBtn {
+  background-color: #F4F5F7;
+  color: #172B4D;
+  border: 1px solid #DFE1E6;
+}
+#viewFieldsBtn:hover {
+  background-color: #EBECF0;
+}
+#customFields {
+  max-height: 180px;
+  overflow: auto;
+  background: #fafafa;
+  padding: 8px;
+  border: 1px solid #eee;
+  margin-top: 10px;
+  border-radius: 6px;
+  font-size: 13px;
+}
+.field-item {
+  padding: 4px 2px;
+  border-bottom: 1px solid #f0f0f0;
+}
+#log {
+  white-space: pre-wrap;
+  max-height: 140px;
+  overflow: auto;
+  background: #F4F5F7;
+  padding: 8px;
+  margin-top: 8px;
+  font-size: 12px;
+  border-radius: 6px;
+  border: 1px solid #DFE1E6;
+}
+.helper{
+  font-size: 0.8em;
+  font-weight: normal;
+}

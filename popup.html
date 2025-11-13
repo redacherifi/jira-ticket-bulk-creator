@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Jira Bulk Create</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h3><img src="https://wac-cdn.atlassian.com/assets/img/favicons/atlassian/favicon.png" alt="Atlassian Logo"/>Jira Bulk Create</h3>
+
+    <label for="jiraUrlInput">JIRA URL (required)</label>
+    <input id="jiraUrlInput" type="url" value="https://altirnao.atlassian.net" required />
+
+    <label for="emailInput">JIRA Email (required)</label>
+    <input id="emailInput" type="email" value="" required />
+
+    <label for="tokenInput" title="https://id.atlassian.com/manage-profile/security/api-tokens">JIRA API Token (required) - <a class="helper" href="https://id.atlassian.com/manage-profile/security/api-tokens" target="_blank">Generate API Key</a></label>
+    <input id="tokenInput" type="password" placeholder="API token" value="" required />
+
+    <label for="epicInput">EPIC_KEY (optional)</label>
+    <input id="epicInput" type="text" value="" placeholder="e.g. PROJ-123" />
+
+    <label for="fileInput">JSON file (list of issues) <a href="template.json" class="helper" download>Download template</a></label>
+    <input type="file" id="fileInput" accept=".json" />
+
+    <button id="uploadBtn">Upload & Create Issues</button>
+    <button id="viewFieldsBtn" type="button">View Custom Fields</button>
+
+    <div id="customFields" style="display:none"></div>
+    <pre id="log"></pre>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
